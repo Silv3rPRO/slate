@@ -1,0 +1,107 @@
+# Battle conditions
+
+## IsOpponentShiny
+
+```lua
+function isOpponentShiny()
+```
+
+Returns true if the opponent pokémon is shiny.
+
+## IsAlreadyCaught
+
+```lua
+function isAlreadyCaught()
+```
+
+Returns true if the opponent pokémon has already been caught and has a pokédex entry.
+
+## IsWildBattle
+
+```lua
+function isWildBattle()
+```
+
+Returns true if the current battle is against a wild pokémon.
+
+## GetActivePokemonNumber
+
+```lua
+function getActivePokemonNumber()
+```
+
+Returns the index of the active team pokémon in the current battle.
+
+## GetOpponentId
+
+```lua
+function getOpponentId()
+```
+
+Returns the id of the opponent pokémon in the current battle.
+
+## GetOpponentName
+
+```lua
+function getOpponentName()
+```
+
+Returns the name of the opponent pokémon in the current battle.
+
+## GetOpponentHealth
+
+```lua
+function getOpponentHealth()
+```
+
+Returns the current health of the opponent pokémon in the current battle.
+
+## GetOpponentHealthPercent
+
+```lua
+function getOpponentHealthPercent()
+```
+
+Returns the percentage of remaining health of the opponent pokémon in the current battle.
+
+## GetOpponentLevel
+
+```lua
+function getOpponentLevel()
+```
+
+Returns the level of the opponent pokémon in the current battle.
+
+## getOpponentStatus
+
+```lua
+function getOpponentStatus()
+```
+
+Returns the status of the opponent pokémon in the current battle.
+
+## IsOpponentEffortValue
+
+```lua
+function isOpponentEffortValue(statType)
+```
+
+Returns true if the opponent is only giving the specified effort value.
+
+The valid values for the stat type are:
+
+Full name | Short  | Alternative
+--------- | ------ | -----------
+Health    | HP     |
+Attack    | ATK    |
+Defence   | DEF    | Defense
+SpAttack  | SPATK  |
+SpDefence | SPDEF  | SpDefense
+Speed     | SPD    |
+
+### PARAMETERS
+
+Parameter | Type   | Description
+--------- | ------ | -----------
+statType  | string | Name of the stat (case insensitive).
+
