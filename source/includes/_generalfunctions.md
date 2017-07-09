@@ -80,6 +80,12 @@ file      | string | Sound file to play
 
 ```lua
 function registerHook(eventName, callback)
+
+function sendBattleCry()
+  log("FOR THE HORDE")
+end
+
+registerHook("onBattleAction", sendBattleCry())
 ```
 
 Calls the specified function when the specified event occurs.
