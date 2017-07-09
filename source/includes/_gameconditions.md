@@ -851,3 +851,383 @@ function isAutoEvolve()
 ```
 
 Return the state Auto Evolve
+
+## IsPCOpen
+
+```lua
+function isPCOpen()
+```
+
+Check if the PC is open. Moving close the PC, usePC() opens it.
+
+## IsCurrentPCBoxRefreshed
+
+```lua
+function isCurrentPCBoxRefreshed()
+```
+
+Is the currentPCBox refreshed yet?
+
+## GetCurrentPCBoxSize
+
+```lua
+function getCurrentPCBoxSize()
+```
+
+Current box size.
+
+## GetCurrentPCBoxId
+
+```lua
+function getCurrentPCBoxId()
+```
+
+Get the active PC Box.
+
+## GetPCBoxCount
+
+```lua
+function getPCBoxCount()
+```
+
+Return the number of non-empty boxes in the PC
+
+## GetPCPokemonCount
+
+```lua
+function getPCPokemonCount()
+```
+
+Return the number of pokemon in the PC
+
+## GetPokemonIdFromPC
+
+```lua
+function getPokemonIdFromPC(boxId, boxPokemonId)
+```
+
+Pokedex ID of the pokemon of the current box matching the ID.
+
+### PARAMETERS
+
+Parameter    | Type   | Description
+------------ | ------ | -----------
+boxId        | number | ID of the specified box.
+boxPokemonId | number | PROShine unique ID of the specified pokemon.
+
+## GetPokemonNameFromPC
+
+```lua
+function getPokemonNameFromPC(boxId, boxPokemonId)
+```
+
+Name of the pokemon of the current box matching the ID.
+
+### PARAMETERS
+
+Parameter    | Type   | Description
+------------ | ------ | -----------
+boxId        | number | ID of the specified box.
+boxPokemonId | number | PROShine unique ID of the specified pokemon.
+
+## GetPokemonHealthFromPC
+
+```lua
+function getPokemonHealthFromPC(boxId, boxPokemonId)
+```
+
+Current HP of the pokemon of the current box matching the ID.
+
+### PARAMETERS
+
+Parameter    | Type   | Description
+------------ | ------ | -----------
+boxId        | number | ID of the specified box.
+boxPokemonId | number | PROShine unique ID of the specified pokemon.
+
+## GetPokemonHealthPercentFromPC
+
+```lua
+function getPokemonHealthPercentFromPC(boxId, boxPokemonId)
+```
+
+Returns the percentage of remaining health of the specified pokémon in the team.
+
+### PARAMETERS
+
+Parameter    | Type   | Description
+------------ | ------ | -----------
+boxId        | number | ID of the specified box.
+boxPokemonId | number | PROShine unique ID of the specified pokemon.
+
+## GetPokemonMaxHealthFromPC
+
+```lua
+function getPokemonMaxHealthFromPC(boxId, boxPokemonId)
+```
+
+Max HP of the pokemon of the current box matching the ID.
+
+### PARAMETERS
+
+Parameter    | Type   | Description
+------------ | ------ | -----------
+boxId        | number | ID of the specified box.
+boxPokemonId | number | PROShine unique ID of the specified pokemon.
+
+## GetPokemonLevelFromPC
+
+```lua
+function getPokemonLevelFromPC(boxId, boxPokemonId)
+```
+
+Level of the pokemon of the current box matching the ID.
+
+### PARAMETERS
+
+Parameter    | Type   | Description
+------------ | ------ | -----------
+boxId        | number | ID of the specified box.
+boxPokemonId | number | PROShine unique ID of the specified pokemon.
+
+## GetPokemonTotalExperienceFromPC
+
+```lua
+function getPokemonTotalExperienceFromPC(boxId, boxPokemonId)
+```
+
+Total of experience cost of a level for the pokemon of the current box matching the ID.
+
+### PARAMETERS
+
+Parameter    | Type   | Description
+------------ | ------ | -----------
+boxId        | number | ID of the specified box.
+boxPokemonId | number | PROShine unique ID of the specified pokemon.
+
+## GetPokemonRemainingExperienceFromPC
+
+```lua
+function getPokemonRemainingExperienceFromPC(boxId, boxPokemonId)
+```
+
+Remaining experience before the next level of the pokemon of the current box matching the ID.
+
+### PARAMETERS
+
+Parameter    | Type   | Description
+------------ | ------ | -----------
+boxId        | number | ID of the specified box.
+boxPokemonId | number | PROShine unique ID of the specified pokemon.
+
+## GetPokemonStatusFromPC
+
+```lua
+function getPokemonStatusFromPC(boxId, boxPokemonId)
+```
+
+Status of the pokemon of the current box matching the ID.
+
+### PARAMETERS
+
+Parameter    | Type   | Description
+------------ | ------ | -----------
+boxId        | number | ID of the specified box.
+boxPokemonId | number | PROShine unique ID of the specified pokemon.
+
+## GetPokemonTypeFromPC
+
+```lua
+function getPokemonTypeFromPC(boxId, boxPokemonId)
+```
+
+Type of the pokemon of the current box matching the ID as an array of length 2.
+
+### PARAMETERS
+
+Parameter    | Type   | Description
+------------ | ------ | -----------
+boxId        | number | ID of the specified box.
+boxPokemonId | number | PROShine unique ID of the specified pokemon.
+
+## GetPokemonHeldItemFromPC
+
+```lua
+function getPokemonHeldItemFromPC(boxId, boxPokemonId)
+```
+
+Returns the item held by the specified pokemon in the PC, null if empty.
+
+### PARAMETERS
+
+Parameter    | Type   | Description
+------------ | ------ | -----------
+boxId        | number | ID of the specified box.
+boxPokemonId | number | PROShine unique ID of the specified pokemon.
+
+## GetPokemonUniqueIdFromPC
+
+```lua
+function getPokemonUniqueIdFromPC(boxId, boxPokemonId)
+```
+
+PROShine custom unique ID of the pokemon of the current box matching the ID.
+
+### PARAMETERS
+
+Parameter    | Type   | Description
+------------ | ------ | -----------
+boxId        | number | ID of the specified box.
+boxPokemonId | number | PROShine unique ID of the specified pokemon.
+
+## GetPokemonRemainingPowerPointsFromPC
+
+```lua
+function getPokemonRemainingPowerPointsFromPC(boxId, boxPokemonId, moveId)
+```
+
+Current move PP of the pokemon of the current box matching the ID.
+
+### PARAMETERS
+
+Parameter    | Type   | Description
+------------ | ------ | -----------
+boxId        | number | ID of the specified box.
+boxPokemonId | number | PROShine unique ID of the specified pokemon.
+moveId       | number | ID of the move (1-4).
+
+## GetPokemonMaxPowerPointsFromPC
+
+```lua
+function getPokemonMaxPowerPointsFromPC(boxId, boxPokemonId, moveId)
+```
+
+Max move PP of the pokemon of the current box matching the ID.
+
+### PARAMETERS
+
+Parameter    | Type   | Description
+------------ | ------ | -----------
+boxId        | number | ID of the specified box.
+boxPokemonId | number | PROShine unique ID of the specified pokemon.
+moveId       | number | ID of the move (1-4).
+
+## IsPokemonFromPCShiny
+
+```lua
+function IsPokemonFromPCShiny(boxId, boxPokemonId)
+```
+
+Shinyness of the pokemon of the current box matching the ID.
+
+### PARAMETERS
+
+Parameter    | Type   | Description
+------------ | ------ | -----------
+boxId        | number | ID of the specified box.
+boxPokemonId | number | PROShine unique ID of the specified pokemon.
+
+## GetPokemonMoveNameFromPC
+
+```lua
+function getPokemonFromPC(boxId, boxPokemonId, moveId)
+```
+
+Move of the pokemon of the current box matching the ID.
+
+### PARAMETERS
+
+Parameter    | Type   | Description
+------------ | ------ | -----------
+boxId        | number | ID of the specified box.
+boxPokemonId | number | PROShine unique ID of the specified pokemon.
+moveId       | number | ID of the move (1-4).
+
+## GetPokemonMoveAccuracyFromPC
+
+```lua
+function getPokemonMoveAccuracyFromPC(boxId, boxPokemonId, moveId)
+```
+
+Returns the move accuracy of the specified pokémon in the box at the specified index.
+
+### PARAMETERS
+
+Parameter    | Type   | Description
+------------ | ------ | -----------
+boxId        | number | ID of the specified box.
+boxPokemonId | number | PROShine unique ID of the specified pokemon.
+moveId       | number | ID of the move (1-4).
+
+## GetPokemonFromPC
+
+```lua
+function getPokemonFromPC(boxId, boxPokemonId)
+```
+
+PROShine custom unique ID of the pokemon of the current box matching the ID.
+
+### PARAMETERS
+
+Parameter    | Type   | Description
+------------ | ------ | -----------
+boxId        | number | ID of the specified box.
+boxPokemonId | number | PROShine unique ID of the specified pokemon.
+
+## GetPokemonFromPC
+
+```lua
+function getPokemonFromPC(boxId, boxPokemonId)
+```
+
+PROShine custom unique ID of the pokemon of the current box matching the ID.
+
+### PARAMETERS
+
+Parameter    | Type   | Description
+------------ | ------ | -----------
+boxId        | number | ID of the specified box.
+boxPokemonId | number | PROShine unique ID of the specified pokemon.
+## GetPokemonFromPC
+
+```lua
+function getPokemonFromPC(boxId, boxPokemonId)
+```
+
+PROShine custom unique ID of the pokemon of the current box matching the ID.
+
+### PARAMETERS
+
+Parameter    | Type   | Description
+------------ | ------ | -----------
+boxId        | number | ID of the specified box.
+boxPokemonId | number | PROShine unique ID of the specified pokemon.
+
+## GetPokemonFromPC
+
+```lua
+function getPokemonFromPC(boxId, boxPokemonId)
+```
+
+PROShine custom unique ID of the pokemon of the current box matching the ID.
+
+### PARAMETERS
+
+Parameter    | Type   | Description
+------------ | ------ | -----------
+boxId        | number | ID of the specified box.
+boxPokemonId | number | PROShine unique ID of the specified pokemon.
+## GetPokemonFromPC
+
+```lua
+function getPokemonFromPC(boxId, boxPokemonId)
+```
+
+PROShine custom unique ID of the pokemon of the current box matching the ID.
+
+### PARAMETERS
+
+Parameter    | Type   | Description
+------------ | ------ | -----------
+boxId        | number | ID of the specified box.
+boxPokemonId | number | PROShine unique ID of the specified pokemon.
