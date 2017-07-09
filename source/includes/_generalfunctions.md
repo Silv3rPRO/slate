@@ -82,7 +82,7 @@ file      | string | Sound file to play
 function registerHook(eventName, callback)
 
 function sendBattleCry()
-  log("FOR THE HORDE")
+  log("FOR THE HORDE!")
 end
 
 registerHook("onBattleAction", sendBattleCry())
