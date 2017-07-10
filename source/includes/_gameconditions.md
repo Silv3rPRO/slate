@@ -545,7 +545,7 @@ moveName     | string | Name of the move (case insensitive).
 function getActiveBattlers()
 ```
 
-Returns an array of all NPCs that can be challenged on the current map. Format: {"npcName" = {"x" = x, "y" = y}}
+Returns an array of all NPCs that can be challenged on the current map. Format: `{"npcName" = {"x" = x, "y" = y}}`
 
 ## GetActiveDigSpots
 
@@ -553,7 +553,7 @@ Returns an array of all NPCs that can be challenged on the current map. Format: 
 function getActiveDigSpots()
 ```
 
-Returns an array of all usable Dig Spots on the current map. Format: {index = {"x" = x, "y" = y}}
+Returns an array of all usable Dig Spots on the current map. Format: `{index = {"x" = x, "y" = y}}`
 
 ## GetActiveHeadbuttTrees
 
@@ -561,7 +561,7 @@ Returns an array of all usable Dig Spots on the current map. Format: {index = {"
 function getActiveHeadbuttTrees()
 ```
 
-Returns an array of all usable Headbutt trees on the current map. Format: {index = {"x" = x, "y" = y}}
+Returns an array of all usable Headbutt trees on the current map. Format: `{index = {"x" = x, "y" = y}}`
 
 ## GetActiveBerryTrees
 
@@ -569,7 +569,7 @@ Returns an array of all usable Headbutt trees on the current map. Format: {index
 function getActiveBerryTrees()
 ```
 
-Returns an array of all harvestable berry trees on the current map. Format: {index = {"x" = x, "y" = y}}
+Returns an array of all harvestable berry trees on the current map. Format: `{index = {"x" = x, "y" = y}}`
 
 ## GetDiscoverableItems
 
@@ -577,7 +577,7 @@ Returns an array of all harvestable berry trees on the current map. Format: {ind
 function getDiscoverableItems()
 ```
 
-Returns an array of all discoverable items on the currrent map. Format: {index = {"x" = x, "y" = y}}
+Returns an array of all discoverable items on the currrent map. Format: `{index = {"x" = x, "y" = y}}`
 
 ## GetNpcData
 
@@ -585,7 +585,7 @@ Returns an array of all discoverable items on the currrent map. Format: {index =
 function getNpcData()
 ```
 
-Returns NPC data on current map. Format: { { "x" = x , "y" = y, "type" = type }, {...}, ... }
+Returns NPC data on current map. Format: `{ { "x" = x , "y" = y, "type" = type }, {...}, ... }`
 
 ## GetRemainingPowerPoints
 
