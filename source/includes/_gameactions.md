@@ -95,7 +95,7 @@ If the NPC is a pokémon, its name is the character `#` followed by the pokédex
 
 Parameter   | Type   | Description
 ----------- | ------ | -----------
-mapName     | string | Name of the NPC (case insensitive)
+npcName     | string | Name of the NPC (case insensitive)
 
 ## TalkToNpcOnCell
 
