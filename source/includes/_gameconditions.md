@@ -230,16 +230,16 @@ index     | number | Index of the pokémon (1-6).
 ## GetPokemonUniqueId
 
 ```lua
-function getPokemonUniqueId(pokemonUid)
+function getPokemonUniqueId(index)
 ```
 
 PROShine unique ID of the pokemon of the current box matching the ID.
 
 ### PARAMETERS
 
-Parameter  | Type   | Description
----------- | ------ | -----------
-pokemonUid | number | Index of the pokémon (1-6).
+Parameter | Type   | Description
+--------- | ------ | -----------
+index     | number | Index of the pokémon (1-6).
 
 ## IsPokemonShiny
 
