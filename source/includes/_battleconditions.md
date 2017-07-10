@@ -80,6 +80,14 @@ function getOpponentStatus()
 
 Returns the status of the opponent pokémon in the current battle.
 
+## getOpponentForm
+
+```lua
+function getOpponentForm()
+```
+
+Returns the form of the opponent pokémon in the current battle (0 if no form).
+
 ## IsOpponentEffortValue
 
 ```lua
@@ -105,3 +113,35 @@ Parameter | Type   | Description
 --------- | ------ | -----------
 statType  | string | Name of the stat (case insensitive).
 
+## getOpponentEffortValue
+
+```lua
+function getOpponentEffortValue(statType)
+```
+
+Returns the amount of a particular EV given by the opponent.
+
+The valid values for the stat type are:
+
+Full name | Short  | Alternative
+--------- | ------ | -----------
+Health    | HP     |
+Attack    | ATK    |
+Defence   | DEF    | Defense
+SpAttack  | SPATK  |
+SpDefence | SPDEF  | SpDefense
+Speed     | SPD    |
+
+### PARAMETERS
+
+Parameter | Type   | Description
+--------- | ------ | -----------
+statType  | string | Name of the stat (case insensitive).
+
+## getOpponentType
+
+```lua
+function getOpponentType()
+```
+
+Returns the type of the opponent pokémon in the current battle as an array of length 2.

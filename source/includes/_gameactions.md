@@ -43,6 +43,14 @@ Parameter   | Type   | Description
 ----------- | ------ | -----------
 mapName     | string | Name of the destination map (case insensitive)
 
+## MoveToNormalGround
+
+```lua
+function moveToNormalGround()
+```
+
+Move randomly avoiding water and links.
+
 ## MoveToGrass
 
 ```lua
@@ -87,7 +95,7 @@ If the NPC is a pokémon, its name is the character `#` followed by the pokédex
 
 Parameter   | Type   | Description
 ----------- | ------ | -----------
-mapName     | string | Name of the NPC (case insensitive)
+npcName     | string | Name of the NPC (case insensitive)
 
 ## TalkToNpcOnCell
 
@@ -190,3 +198,160 @@ Parameter   | Type   | Description
 ----------- | ------ | -----------
 itemName    | string | Name of the item to buy (case insensitive)
 quantity    | number | Quantity of items to buy
+
+## UsePC
+
+```lua
+function usePC()
+```
+
+Move to the PC and opens it, refreshing the first box.
+
+## OpenPCBox
+
+```lua
+function openPCBox(boxId)
+```
+
+Open box from the PC.
+
+### PARAMETERS
+
+Parameter | Type   | Description
+--------- | ------ | -----------
+boxId     | number | ID of the specified box.
+
+## DepositPokemonToPC
+
+```lua
+function depositPokemonToPC(pokemonUid)
+```
+
+Deposit a pokemon to the pc.
+
+### PARAMETERS
+
+Parameter  | Type   | Description
+---------- | ------ | -----------
+pokemonUid | number | Unique ID of the specified Pokemon
+
+## WithdrawPokemonFromPC
+
+```lua
+function withdrawPokemonFromPC(boxId, boxPokemonId)
+```
+
+Withdraw a pokemon from a known box.
+
+### PARAMETERS
+
+Parameter    | Type   | Description
+------------ | ------ | -----------
+boxId        | number | ID of the specified box.
+boxPokemonId | number | PROShine unique ID of the specified pokemon.
+
+## SwapPokemonFromPC
+
+```lua
+function swapPokemonFromPC(boxId, boxPokemonId, pokemonUid)
+```
+
+Swap a pokemon from the team with a pokemon from the pc.
+
+### PARAMETERS
+
+Parameter    | Type   | Description
+------------ | ------ | -----------
+boxId        | number | ID of the specified box.
+boxPokemonId | number | PROShine unique ID of the specified pokemon to deposit.
+pokemonUid   | number | Unique ID of the specified Pokemon to withdraw.
+
+## GiveItemToPokemon
+
+```lua
+function giveItemToPokemon(itemName, pokemonIndex)
+```
+
+Give the specified item on the specified pokemon.
+
+### PARAMETERS
+
+Parameter    | Type   | Description
+------------ | ------ | -----------
+itemName     | string | Name of the item (case insensitive).
+pokemonIndex | number | Index of the pokémon (1-6).
+
+## TakeItemFromPokemon
+
+```lua
+function takeItemFromPokemon(index)
+```
+
+Take the held item from the specified pokemon.
+
+### PARAMETERS
+
+Parameter | Type   | Description
+--------- | ------ | -----------
+index     | number | Index of the pokémon (1-6).
+
+## ReleasePokemonFromTeam
+
+```lua
+function releasePokemonFromTeam(pokemonUid)
+```
+
+Releases the specified pokemon in the team.
+
+### PARAMETERS
+
+Parameter  | Type   | Description
+---------- | ------ | -----------
+pokemonUid | number | Unique ID of the specified Pokemon to withdraw.
+
+## ReleasePokemonFromPC
+
+```lua
+function releasePokemonFromPC()
+```
+
+Releases the specified pokemon in the PC
+
+### PARAMETERS
+
+Parameter  | Type   | Description
+---------- | ------ | -----------
+boxId      | number | ID of the specified box.
+pokemonUid | number | Unique ID of the specified Pokemon to withdraw.
+
+## EnablePrivateMessage
+
+```lua
+function enablePrivateMessage()
+```
+
+Enable private messages from users.
+
+## DisablePrivateMessage
+
+```lua
+function disablePrivateMessage()
+```
+
+Disable private messages from users.
+
+## EnableAutoEvolve
+
+```lua
+function enableAutoEvolve()
+```
+
+Enable auto-evolve.
+
+## DisableAutoEvolve
+
+```lua
+function disableAutoEvolve()
+```
+
+Disable auto-evolve.
