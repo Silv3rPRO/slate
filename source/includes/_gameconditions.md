@@ -1159,13 +1159,77 @@ boxId        | number | ID of the specified box.
 boxPokemonId | number | PROShine unique ID of the specified pokemon.
 moveId       | number | ID of the move (1-4).
 
-## GetPokemonFromPC
+## GetPokemonMovePowerFromPC
 
 ```lua
-function getPokemonFromPC(boxId, boxPokemonId)
+function getPokemonMovePowerFromPC(boxId, boxPokemonId, moveId)
 ```
 
-PROShine custom unique ID of the pokemon of the current box matching the ID.
+Returns the move power of the specified pokémon in the box at the specified index.
+
+### PARAMETERS
+
+Parameter    | Type   | Description
+------------ | ------ | -----------
+boxId        | number | ID of the specified box.
+boxPokemonId | number | PROShine unique ID of the specified pokemon.
+moveId       | number | ID of the move (1-4).
+
+## GetPokemonMoveTypeFromPC
+
+```lua
+function getPokemonMoveTypeFromPC(boxId, boxPokemonId, moveId)
+```
+
+Returns the move type of the specified pokémon in the box at the specified index.
+
+### PARAMETERS
+
+Parameter    | Type   | Description
+------------ | ------ | -----------
+boxId        | number | ID of the specified box.
+boxPokemonId | number | PROShine unique ID of the specified pokemon.
+moveId       | number | ID of the move (1-4).
+
+## GetPokemonMoveDamageTypeFromPC
+
+```lua
+function getPokemonMoveDamageTypeFromPC(boxId, boxPokemonId, moveId)
+```
+
+Returns the move damage type of the specified pokémon in the box at the specified index.
+
+### PARAMETERS
+
+Parameter    | Type   | Description
+------------ | ------ | -----------
+boxId        | number | ID of the specified box.
+boxPokemonId | number | PROShine unique ID of the specified pokemon.
+moveId       | number | ID of the move (1-4).
+
+## GetPokemonMoveStatusFromPC
+
+```lua
+function getPokemonMoveStatusFromPC(boxId, boxPokemonId, moveId)
+```
+
+Returns true if the move of the specified pokémon in the box at the specified index can apply a status.
+
+### PARAMETERS
+
+Parameter    | Type   | Description
+------------ | ------ | -----------
+boxId        | number | ID of the specified box.
+boxPokemonId | number | PROShine unique ID of the specified pokemon.
+moveId       | number | ID of the move (1-4).
+
+## GetPokemonNatureFromPC
+
+```lua
+function getPokemonNatureFromPC(boxId, boxPokemonId)
+```
+
+Nature of the pokemon of the current box matching the ID.
 
 ### PARAMETERS
 
@@ -1174,27 +1238,13 @@ Parameter    | Type   | Description
 boxId        | number | ID of the specified box.
 boxPokemonId | number | PROShine unique ID of the specified pokemon.
 
-## GetPokemonFromPC
+## GetPokemonAbilityFromPC
 
 ```lua
-function getPokemonFromPC(boxId, boxPokemonId)
+function getPokemonAbilityFromPC(boxId, boxPokemonId)
 ```
 
-PROShine custom unique ID of the pokemon of the current box matching the ID.
-
-### PARAMETERS
-
-Parameter    | Type   | Description
------------- | ------ | -----------
-boxId        | number | ID of the specified box.
-boxPokemonId | number | PROShine unique ID of the specified pokemon.
-## GetPokemonFromPC
-
-```lua
-function getPokemonFromPC(boxId, boxPokemonId)
-```
-
-PROShine custom unique ID of the pokemon of the current box matching the ID.
+Ability of the pokemon of the current box matching the ID.
 
 ### PARAMETERS
 
@@ -1203,13 +1253,22 @@ Parameter    | Type   | Description
 boxId        | number | ID of the specified box.
 boxPokemonId | number | PROShine unique ID of the specified pokemon.
 
-## GetPokemonFromPC
+## GetPokemonStatFromPC
 
 ```lua
-function getPokemonFromPC(boxId, boxPokemonId)
+function getPokemonStatFromPC(boxId, boxPokemonId, statType)
 ```
 
-PROShine custom unique ID of the pokemon of the current box matching the ID.
+Returns the value for the specified stat of the specified pokémon in the PC.
+
+Full name | Short  | Alternative
+--------- | ------ | -----------
+Health    | HP     |
+Attack    | ATK    |
+Defence   | DEF    | Defense
+SpAttack  | SPATK  |
+SpDefence | SPDEF  | SpDefense
+Speed     | SPD    |
 
 ### PARAMETERS
 
@@ -1217,13 +1276,24 @@ Parameter    | Type   | Description
 ------------ | ------ | -----------
 boxId        | number | ID of the specified box.
 boxPokemonId | number | PROShine unique ID of the specified pokemon.
-## GetPokemonFromPC
+statType     | string | Name of the stat (case insensitive).
+
+## GetPokemonEffortValueFromPC
 
 ```lua
-function getPokemonFromPC(boxId, boxPokemonId)
+function getPokemonEffortValueFromPC(boxId, boxPokemonId, statType)
 ```
 
-PROShine custom unique ID of the pokemon of the current box matching the ID.
+Returns the effort value for the specified stat of the specified pokémon in the PC.
+
+Full name | Short  | Alternative
+--------- | ------ | -----------
+Health    | HP     |
+Attack    | ATK    |
+Defence   | DEF    | Defense
+SpAttack  | SPATK  |
+SpDefence | SPDEF  | SpDefense
+Speed     | SPD    |
 
 ### PARAMETERS
 
@@ -1231,3 +1301,112 @@ Parameter    | Type   | Description
 ------------ | ------ | -----------
 boxId        | number | ID of the specified box.
 boxPokemonId | number | PROShine unique ID of the specified pokemon.
+statType     | string | Name of the stat (case insensitive).
+
+## GetPokemonIndividualValueFromPC
+
+```lua
+function getPokemonIndividualValueFromPC(boxId, boxPokemonId, statType)
+```
+
+Returns the individual value for the specified stat of the specified pokémon in the PC.
+
+Full name | Short  | Alternative
+--------- | ------ | -----------
+Health    | HP     |
+Attack    | ATK    |
+Defence   | DEF    | Defense
+SpAttack  | SPATK  |
+SpDefence | SPDEF  | SpDefense
+Speed     | SPD    |
+
+### PARAMETERS
+
+Parameter    | Type   | Description
+------------ | ------ | -----------
+boxId        | number | ID of the specified box.
+boxPokemonId | number | PROShine unique ID of the specified pokemon.
+statType     | string | Name of the stat (case insensitive).
+
+## GetPokemonHappinessFromPC
+
+```lua
+function getPokemonHappinessFromPC(boxId, boxPokemonId)
+```
+
+Happiness of the pokemon of the current box matching the ID.
+
+### PARAMETERS
+
+Parameter    | Type   | Description
+------------ | ------ | -----------
+boxId        | number | ID of the specified box.
+boxPokemonId | number | PROShine unique ID of the specified pokemon.
+
+## GetPokemonRegionFromPC
+
+```lua
+function getPokemonRegionFromPC(boxId, boxPokemonId)
+```
+
+Region of capture of the pokemon of the current box matching the ID.
+
+### PARAMETERS
+
+Parameter    | Type   | Description
+------------ | ------ | -----------
+boxId        | number | ID of the specified box.
+boxPokemonId | number | PROShine unique ID of the specified pokemon.
+
+## GetPokemonOriginalTrainerFromPC
+
+```lua
+function getPokemonOriginalTrainerFromPC(boxId, boxPokemonId)
+```
+
+Original trainer of the pokemon of the current box matching the ID.
+
+### PARAMETERS
+
+Parameter    | Type   | Description
+------------ | ------ | -----------
+boxId        | number | ID of the specified box.
+boxPokemonId | number | PROShine unique ID of the specified pokemon.
+
+## GetPokemonGenderFromPC
+
+```lua
+function getPokemonGenderFromPC(boxId, boxPokemonId)
+```
+
+Gender of the pokemon of the current box matching the ID.
+
+### PARAMETERS
+
+Parameter    | Type   | Description
+------------ | ------ | -----------
+boxId        | number | ID of the specified box.
+boxPokemonId | number | PROShine unique ID of the specified pokemon.
+
+## GetPokemonFormFromPC
+
+```lua
+function getPokemonFormFromPC(boxId, boxPokemonId)
+```
+
+Form of the pokémon in the current box matching the ID. (0 if no form)
+
+### PARAMETERS
+
+Parameter    | Type   | Description
+------------ | ------ | -----------
+boxId        | number | ID of the specified box.
+boxPokemonId | number | PROShine unique ID of the specified pokemon.
+
+## GetServer
+
+```lua
+function getServer()
+```
+
+Returns the connected server
