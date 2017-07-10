@@ -268,7 +268,7 @@ index       | number | Index of the TextOption.
 function logToFile(file, text [, overwrite])
 ```
 
-Writes a string, a number, or a table of strings and/or numbers to file
+Writes a string, a number, or a table of strings and/or numbers to file. 
 `Overwrite` is an optional parameter, and will append the line(s) if absent
 
 Files must be located in `PROShine-X.X.X.X/Logs`
