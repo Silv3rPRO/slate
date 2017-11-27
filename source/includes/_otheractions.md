@@ -262,6 +262,34 @@ Parameter   | Type   | Description
 ----------- | ------ | -----------
 index       | number | Index of the TextOption.
 
+## SetMount
+
+```lua
+function setMount(mount)
+```
+
+Sets the item that will be used to mount the player
+
+### PARAMETERS
+
+Parameter   | Type   | Description
+----------- | ------ | -----------
+mount       | string | Name of the mount.
+
+## SetWaterMount
+
+```lua
+function setWaterMount(mount)
+```
+
+Sets the item that will be used when the player begins surfing
+
+### PARAMETERS
+
+Parameter   | Type   | Description
+----------- | ------ | -----------
+mount       | string | Name of the mount.
+
 ## LogToFile
 
 ```lua
@@ -269,7 +297,7 @@ function logToFile(file, text [, overwrite])
 ```
 
 Writes a string, a number, or a table of strings and/or numbers to file. 
-`Overwrite` is an optional parameter, and will append the line(s) if absent
+`overwrite` is an optional parameter, and will append the line(s) if absent
 
 Files must be located in `PROShine-X.X.X.X/Logs`
 

@@ -373,19 +373,29 @@ Parameter | Type   | Description
 --------- | ------ | -----------
 index     | number | Index of the pokémon (1-6).
 
-## GetPokemonStatus
+## GetPokemonStat
 
 ```lua
-function getPokemonStatus(index)
+function getPokemonStat(index, statType)
 ```
 
-Returns the status of the specified pokémon in the team.
+Returns the value for the specified stat of the specified pokémon in the team.
+
+Full name | Short  | Alternative
+--------- | ------ | -----------
+Health    | HP     |
+Attack    | ATK    |
+Defence   | DEF    | Defense
+SpAttack  | SPATK  |
+SpDefence | SPDEF  | SpDefense
+Speed     | SPD    |
 
 ### PARAMETERS
 
 Parameter | Type   | Description
 --------- | ------ | -----------
 index     | number | Index of the pokémon (1-6).
+statType  | string | Name of the stat (case insensitive).
 
 ## GetPokemonEffortValue
 
