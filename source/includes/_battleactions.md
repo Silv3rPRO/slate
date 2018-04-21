@@ -32,6 +32,14 @@ function sendUsablePokemon()
 
 Sends the first usable pokemon different from the active one.
 
+## SendAnyPokemon
+
+```lua
+function sendAnyPokemon()
+```
+
+Sends the first available pokemon different from the active one.
+
 ## SendPokemon
 
 ```lua
