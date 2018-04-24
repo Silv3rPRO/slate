@@ -47,6 +47,21 @@ Parameter | Type   | Description
 --------- | ------ | -----------
 message   | string | Message to display
 
+## Relog
+
+```lua
+function relog(delay, message)
+```
+
+Logs out and logs back in after the specified number of seconds.
+
+### PARAMETERS
+
+Parameter | Type   | Description
+--------- | ------ | -----------
+delay     | number | Number of seconds to wait before logging in again
+message   | string | Message to display
+
 ## StringContains
 
 ```lua

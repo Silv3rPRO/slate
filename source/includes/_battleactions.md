@@ -67,3 +67,11 @@ Uses the specified move in the current battle if available.
 Parameter   | Type   | Description
 ----------- | ------ | -----------
 moveName    | string | Name of the move to use (case insensitive).
+
+## UseAnyMove
+
+```lua
+function useAnyMove()
+```
+
+Uses the first available move or struggle if out of PP.

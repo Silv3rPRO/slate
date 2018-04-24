@@ -202,6 +202,20 @@ Parameter   | Type   | Description
 itemName    | string | Name of the item to buy (case insensitive)
 quantity    | number | Quantity of items to buy
 
+## RelearnMove
+
+```lua
+function relearnMove(moveName)
+```
+
+Relearn a move from the move relearner NPC.
+
+### PARAMETERS
+
+Parameter   | Type   | Description
+----------- | ------ | -----------
+moveName    | string | Name of the move to relearn
+
 ## UsePC
 
 ```lua

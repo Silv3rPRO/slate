@@ -782,6 +782,14 @@ function isShopOpen()
 
 Returns true if there is a shop opened.
 
+## IsRelearningMoves
+
+```lua
+function isRelearningMoves()
+```
+
+Returns true if the player is relearning the move of a Pokemon from an NPC.
+
 ## GetMoney
 
 ```lua
