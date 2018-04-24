@@ -72,7 +72,7 @@ function getOpponentLevel()
 
 Returns the level of the opponent pokémon in the current battle.
 
-## getOpponentStatus
+## GetOpponentStatus
 
 ```lua
 function getOpponentStatus()
@@ -80,7 +80,7 @@ function getOpponentStatus()
 
 Returns the status of the opponent pokémon in the current battle.
 
-## getOpponentForm
+## GetOpponentForm
 
 ```lua
 function getOpponentForm()
@@ -113,7 +113,7 @@ Parameter | Type   | Description
 --------- | ------ | -----------
 statType  | string | Name of the stat (case insensitive).
 
-## getOpponentEffortValue
+## GetOpponentEffortValue
 
 ```lua
 function getOpponentEffortValue(statType)
@@ -138,7 +138,7 @@ Parameter | Type   | Description
 --------- | ------ | -----------
 statType  | string | Name of the stat (case insensitive).
 
-## getOpponentType
+## GetOpponentType
 
 ```lua
 function getOpponentType()

@@ -41,7 +41,10 @@ Moves to a random accessible cell inside the specified rectangle.
 
 Parameter   | Type   | Description
 ----------- | ------ | -----------
-mapName     | string | Name of the destination map (case insensitive)
+minX        | number | Minimum X coordinate of the rectangle
+minY        | number | Minimum Y coordinate of the rectangle 
+maxX        | number | Maximum X coordinate of the rectangle 
+maxY        | number | Maximum Y coordinate of the rectangle 
 
 ## MoveToNormalGround
 
@@ -199,6 +202,20 @@ Parameter   | Type   | Description
 itemName    | string | Name of the item to buy (case insensitive)
 quantity    | number | Quantity of items to buy
 
+## RelearnMove
+
+```lua
+function relearnMove(moveName)
+```
+
+Relearn a move from the move relearner NPC.
+
+### PARAMETERS
+
+Parameter   | Type   | Description
+----------- | ------ | -----------
+moveName    | string | Name of the move to relearn
+
 ## UsePC
 
 ```lua
@@ -227,7 +244,7 @@ boxId     | number | ID of the specified box.
 function depositPokemonToPC(pokemonUid)
 ```
 
-Deposit a pokemon to the pc.
+Deposit a pokemon to the PC.
 
 ### PARAMETERS
 
@@ -256,7 +273,7 @@ boxPokemonId | number | PROShine unique ID of the specified pokemon.
 function swapPokemonFromPC(boxId, boxPokemonId, pokemonUid)
 ```
 
-Swap a pokemon from the team with a pokemon from the pc.
+Swap a pokemon from the team with a pokemon from the PC.
 
 ### PARAMETERS
 
@@ -315,7 +332,7 @@ pokemonUid | number | Unique ID of the specified Pokemon to withdraw.
 function releasePokemonFromPC()
 ```
 
-Releases the specified pokemon in the PC
+Releases the specified pokemon in the PC.
 
 ### PARAMETERS
 

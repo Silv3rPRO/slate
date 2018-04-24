@@ -98,5 +98,5 @@ If you do not call these functions, the move will not be learned.
 
 Parameter    | Type   | Description
 ------------ | ------ | -----------
-moveName     | string | Name of the move that can be learned
-pokemonIndex | number | Index of the pokémon learning that move
+moveName     | string | Name of the move that can be learned.
+pokemonIndex | number | Index of the pokémon learning the new move.
