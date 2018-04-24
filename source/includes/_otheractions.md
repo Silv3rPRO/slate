@@ -102,7 +102,7 @@ moveNames | array of string | Name of the moves (case insensitive)
 function setOption(index, value)
 ```
 
-Sets the option at a particular index, or creates it if it doesn't exist
+Sets the option at a particular index, or creates it if it doesn't exist.
 
 This function only affects the PROShine client user interface.
 
@@ -119,7 +119,7 @@ value     | boolean | Value of the option (true/false).
 function getOption(index)
 ```
 
-Gets the option at a particular index, or creates it if it doesn't exist
+Gets the option at a particular index, or creates it if it doesn't exist.
 
 This function only affects the PROShine client user interface.
 
@@ -135,9 +135,9 @@ index     | number | Index of the option.
 function setOptionName(index, optionName)
 ```
 
-Sets the name of the option at a particular index, or creates it if it doesn't exist
+Sets the name of the option at a particular index, or creates it if it doesn't exist.
 
-This function only affects the PROShine client user interface
+This function only affects the PROShine client user interface.
 
 ### PARAMETERS
 
@@ -152,9 +152,9 @@ optionName | string | Name of the option.
 function setOptionDescription(index, optionDescription)
 ```
 
-Sets the tooltip description of the option at a particular index, or creates it if it doesn't exist
+Sets the tooltip description of the option at a particular index, or creates it if it doesn't exist.
 
-This function only affects the PROShine client user interface
+This function only affects the PROShine client user interface.
 
 ### PARAMETERS
 
@@ -169,9 +169,9 @@ optionDescription | string | Description of the option.
 function removeOption(index)
 ```
 
-Removes the slider option at the specified index
+Removes the slider option at the specified index.
 
-This function only affects the PROShine client user interface
+This function only affects the PROShine client user interface.
 
 ### PARAMETERS
 
@@ -185,9 +185,9 @@ index       | number | Index of the option.
 function setTextOption(index, optionText)
 ```
 
-Sets the text of the TextOption at a particular index, or creates it if it doesn't exist
+Sets the text of the TextOption at a particular index, or creates it if it doesn't exist.
 
-This function only affects the PROShine client user interface
+This function only affects the PROShine client user interface.
 
 ### PARAMETERS
 
@@ -202,9 +202,9 @@ optionText  | string | Text of the specified TextOption.
 function getTextOption(index)
 ```
 
-Returns the text content of the TextOption at a particular index, or an empty string if it doesn't exist
+Returns the text content of the TextOption at a particular index, or an empty string if it doesn't exist.
 
-This function only affects the PROShine client user interface
+This function only affects the PROShine client user interface.
 
 ### PARAMETERS
 
@@ -218,9 +218,9 @@ index       | number | Index of the TextOption.
 function setTextOptionName(index, optionName)
 ```
 
-Sets the name of the TextOption at a particular index, or creates it if it doesn't exist
+Sets the name of the TextOption at a particular index, or creates it if it doesn't exist.
 
-This function only affects the PROShine client user interface
+This function only affects the PROShine client user interface.
 
 ### PARAMETERS
 
@@ -235,9 +235,9 @@ optionName  | string | Name of the TextOption.
 function setTextOptionDescription(index, optionDescription)
 ```
 
-Sets the tooltip description of the TextOption at a particular index, or creates it if it doesn't exist
+Sets the tooltip description of the TextOption at a particular index, or creates it if it doesn't exist.
 
-This function only affects the PROShine client user interface
+This function only affects the PROShine client user interface.
 
 ### PARAMETERS
 
@@ -252,9 +252,9 @@ optionDescription | string | Description of the TextOption.
 function removeTextOption(index)
 ```
 
-Removes the text option at the specified index
+Removes the text option at the specified index.
 
-This function only affects the PROShine client user interface
+This function only affects the PROShine client user interface.
 
 ### PARAMETERS
 
@@ -268,7 +268,7 @@ index       | number | Index of the TextOption.
 function setMount(mount)
 ```
 
-Sets the item that will be used to mount the player
+Sets the item that will be used to mount the player.
 
 ### PARAMETERS
 
@@ -282,7 +282,7 @@ mount       | string | Name of the mount.
 function setWaterMount(mount)
 ```
 
-Sets the item that will be used when the player begins surfing
+Sets the item that will be used when the player begins surfing.
 
 ### PARAMETERS
 
@@ -297,9 +297,9 @@ function logToFile(file, text [, overwrite])
 ```
 
 Writes a string, a number, or a table of strings and/or numbers to file. 
-`overwrite` is an optional parameter, and will append the line(s) if absent
+`overwrite` is an optional parameter, and will append the line(s) if absent.
 
-Files must be located in `PROShine-X.X.X.X/Logs`
+Files must be located in `PROShine-X.X.X.X/Logs`.
 
 ### PARAMETERS
 
@@ -315,9 +315,9 @@ overwrite | boolean | Append absent lines to file (true/false).
 function readLinesFromFile(file)
 ```
 
-Returns a table of every line in file
+Returns a table of every line in file.
 
-Files must be located in `PROShine-X.X.X.X/Logs`
+Files must be located in `PROShine-X.X.X.X/Logs`.
 
 ### PARAMETERS
 

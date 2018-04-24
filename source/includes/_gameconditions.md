@@ -489,7 +489,7 @@ index     | number | Index of the pokémon (1-6).
 function getPokemonType(index)
 ```
 
-Returns the type of the specified pokémon in the team as an array of length 2.
+Returns the type of the specified pokémon in the team as a table of length 2.
 
 ### PARAMETERS
 
@@ -555,7 +555,7 @@ moveName     | string | Name of the move (case insensitive).
 function getActiveBattlers()
 ```
 
-Returns an array of all NPCs that can be challenged on the current map. Format: `{"npcName" = {"x" = x, "y" = y}}`
+Returns an array of all NPCs that can be challenged on the current map. Format: `{"npcName" = {"x" = x, "y" = y}}`.
 
 ## GetActiveDigSpots
 
@@ -563,7 +563,7 @@ Returns an array of all NPCs that can be challenged on the current map. Format: 
 function getActiveDigSpots()
 ```
 
-Returns an array of all usable Dig Spots on the current map. Format: `{index = {"x" = x, "y" = y}}`
+Returns an array of all usable Dig Spots on the current map. Format: `{index = {"x" = x, "y" = y}}`.
 
 ## GetActiveHeadbuttTrees
 
@@ -571,7 +571,7 @@ Returns an array of all usable Dig Spots on the current map. Format: `{index = {
 function getActiveHeadbuttTrees()
 ```
 
-Returns an array of all usable Headbutt trees on the current map. Format: `{index = {"x" = x, "y" = y}}`
+Returns an array of all usable Headbutt trees on the current map. Format: `{index = {"x" = x, "y" = y}}`.
 
 ## GetActiveBerryTrees
 
@@ -579,7 +579,7 @@ Returns an array of all usable Headbutt trees on the current map. Format: `{inde
 function getActiveBerryTrees()
 ```
 
-Returns an array of all harvestable berry trees on the current map. Format: `{index = {"x" = x, "y" = y}}`
+Returns an array of all harvestable berry trees on the current map. Format: `{index = {"x" = x, "y" = y}}`.
 
 ## GetDiscoverableItems
 
@@ -587,7 +587,7 @@ Returns an array of all harvestable berry trees on the current map. Format: `{in
 function getDiscoverableItems()
 ```
 
-Returns an array of all discoverable items on the currrent map. Format: `{index = {"x" = x, "y" = y}}`
+Returns an array of all discoverable items on the currrent map. Format: `{index = {"x" = x, "y" = y}}`.
 
 ## GetNpcData
 
@@ -595,7 +595,7 @@ Returns an array of all discoverable items on the currrent map. Format: `{index 
 function getNpcData()
 ```
 
-Returns NPC data on current map. Format: `{ { "x" = x , "y" = y, "type" = type }, {...}, ... }`
+Returns NPC data on current map. Format: `{ { "x" = x , "y" = y, "type" = type }, {...}, ... }`.
 
 ## GetRemainingPowerPoints
 
@@ -860,7 +860,7 @@ Returns true if the character is outside.
 function isAutoEvolve()
 ```
 
-Return the state Auto Evolve
+Returns true if auto-evolve is enabled.
 
 ## IsPCOpen
 
@@ -900,7 +900,7 @@ Get the active PC Box.
 function getPCBoxCount()
 ```
 
-Return the number of non-empty boxes in the PC
+Return the number of non-empty boxes in the PC.
 
 ## GetPCPokemonCount
 
@@ -908,7 +908,7 @@ Return the number of non-empty boxes in the PC
 function getPCPokemonCount()
 ```
 
-Return the number of pokemon in the PC
+Return the number of pokemon in the PC.
 
 ## GetPokemonIdFromPC
 
@@ -1051,7 +1051,7 @@ boxPokemonId | number | PROShine unique ID of the specified pokemon.
 function getPokemonTypeFromPC(boxId, boxPokemonId)
 ```
 
-Type of the pokemon of the current box matching the ID as an array of length 2.
+Type of the pokemon of the current box matching the ID as a table of length 2.
 
 ### PARAMETERS
 
@@ -1307,6 +1307,7 @@ Speed     | SPD    |
 
 ### PARAMETERS
 
+
 Parameter    | Type   | Description
 ------------ | ------ | -----------
 boxId        | number | ID of the specified box.
@@ -1404,7 +1405,7 @@ boxPokemonId | number | PROShine unique ID of the specified pokemon.
 function getPokemonFormFromPC(boxId, boxPokemonId)
 ```
 
-Form of the pokémon in the current box matching the ID. (0 if no form)
+Form of the pokémon in the current box matching the ID. (0 if no form.)
 
 ### PARAMETERS
 
@@ -1419,4 +1420,4 @@ boxPokemonId | number | PROShine unique ID of the specified pokemon.
 function getServer()
 ```
 
-Returns the connected server
+Returns the connected server name.

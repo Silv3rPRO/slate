@@ -52,7 +52,7 @@ Sends the specified pokemon to battle.
 
 Parameter | Type   | Description
 --------- | ------ | -----------
-index     | number | Index of pokémon to send
+index     | number | Index of pokémon to send.
 
 ## UseMove
 
@@ -66,4 +66,4 @@ Uses the specified move in the current battle if available.
 
 Parameter   | Type   | Description
 ----------- | ------ | -----------
-moveName    | string | Name of the move to use (case insensitive)
+moveName    | string | Name of the move to use (case insensitive).
