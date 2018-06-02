@@ -100,3 +100,19 @@ Parameter    | Type   | Description
 ------------ | ------ | -----------
 moveName     | string | Name of the move that can be learned.
 pokemonIndex | number | Index of the pokémon learning the new move.
+
+
+## onWarningMessage
+
+```lua
+function onWarningMessage(differentMap, distance)
+```
+
+Called when got teleported to unexpected map or teleported to unexpected distance from last cell.
+
+### PARAMETERS
+
+Parameter    | Type   | Description
+------------ | ------ | -----------
+differentMap | bool   | Returns true if was teleported to any unexpected map.
+distance     | number | Returns the distance from last cell.
