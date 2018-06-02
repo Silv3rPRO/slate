@@ -114,5 +114,5 @@ Called when got teleported to unexpected map or teleported to unexpected distanc
 
 Parameter    | Type   | Description
 ------------ | ------ | -----------
-differentMap | bool   | Returns true if was teleported to any unexpected map.
+differentMap | boolen | Returns true if was teleported to any unexpected map.
 distance     | number | Returns the distance from last cell.
